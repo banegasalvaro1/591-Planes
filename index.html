@@ -24,7 +24,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            pointer-events: none; /* Evita que el usuario pause accidentalmente el video al hacer clic */
         }
     </style>
 </head>
@@ -33,10 +32,11 @@
     <!-- NAVEGACIÓN -->
     <nav class="sticky top-0 z-50 bg-[#0A2626]/95 backdrop-blur border-b border-[#F2F2F2]/10 px-6 py-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <!-- Logo JPG -->
+            <!-- Logo JPG y Nombre de la Agencia -->
             <div class="flex items-center justify-center">
                 <!-- Se busca el archivo 'logo.jpg' en el mismo directorio -->
-                <img src="logo.jpg" alt="591 Creative Studio Logo" class="h-16 w-auto object-contain rounded-md" onerror="this.style.display='none'">
+                <img src="logo.jpg" alt="Logo" class="h-20 w-auto object-contain rounded-md" onerror="this.style.display='none'">
+                <span class="ml-4 text-2xl md:text-3xl font-bold tracking-wide text-[#F2F2F2]">591 Creative Studio</span>
             </div>
             <a href="#planes" class="hidden md:flex items-center gap-2 bg-[#F24607] hover:bg-[#d13c06] transition-colors text-[#F2F2F2] px-5 py-2 rounded-sm font-semibold text-sm">
                 Ver Planes 
@@ -52,9 +52,9 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
                 <span>Marketing Digital 360° + IA Integrada</span>
             </div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                La evolución del marketing para <br class="hidden md:block"/>
-                <span class="text-[#F24607]">escalar su negocio.</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <span class="text-[#F24607]">La evolución del marketing</span><br class="hidden md:block"/>
+                <span class="text-[#F2F2F2]">para escalar su negocio.</span>
             </h1>
             <p class="text-lg md:text-xl text-[#F2F2F2]/80 mb-8 max-w-2xl mx-auto leading-relaxed">
                 Generamos, filtramos y calificamos sus leads. Nuestro sistema combina lo mejor del marketing digital con la eficiencia de un Asistente de IA para WhatsApp Business. <strong>Usted solo se encarga de cerrar ventas.</strong>
@@ -63,10 +63,8 @@
             <!-- VSL VIDEO SECTION (YOUTUBE EMBED) -->
             <div class="relative w-full max-w-3xl mx-auto mb-10 rounded-xl overflow-hidden shadow-2xl shadow-[#F24607]/10 border border-[#F2F2F2]/10 bg-[#041010]">
                 <div class="video-container">
-                    <!-- INSTRUCCIONES: Cambie la ID 'dQw4w9WgXcQ' por la ID de su propio video de YouTube.
-                         Ejemplo: si su enlace es https://www.youtube.com/watch?v=ABC123XYZ, la ID es ABC123XYZ -->
                     <iframe 
-                        src="https://www.youtube-nocookie.com/embed/https://youtu.be/sqVGSxYMrr8?si=KEEP9w-DjGq-ltJq?autoplay=1&mute=1&controls=0&loop=1&playlist=dQw4w9WgXcQ&modestbranding=1&rel=0&iv_load_policy=3" 
+                        src="https://www.youtube.com/embed/sqVGSxYMrr8?autoplay=1&mute=1&controls=1&loop=1&playlist=sqVGSxYMrr8&modestbranding=1&rel=0&iv_load_policy=3" 
                         title="591 Creative Studio VSL" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -74,7 +72,7 @@
                         allowfullscreen>
                     </iframe>
                 </div>
-                <!-- Botón superpuesto falso para invitar a interactuar si es necesario -->
+                <!-- Indicador visual -->
                  <div class="absolute top-4 left-4 bg-black/60 text-[#F2F2F2] text-xs px-3 py-1.5 rounded-full backdrop-blur-sm flex items-center gap-2 pointer-events-none z-20">
                     <div class="w-2 h-2 bg-[#F24607] rounded-full animate-pulse"></div>
                     Visualización Corporativa
